@@ -14,7 +14,7 @@ const EnterNumbers = () => {
     };
 
     return (
-        <div>
+        <div className="container">
             <h2>Enter Numbers</h2>
             <p>Input as many random numbers as you'd like!</p>
             <input value={input} onChange={e => setInput(e.target.value)} placeholder="1, 2, 3" />
