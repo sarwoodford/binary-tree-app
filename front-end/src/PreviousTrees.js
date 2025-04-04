@@ -9,7 +9,7 @@ const PreviousTrees = () => {
     }, []);
 
     return (
-        <div>
+        <div className="container">
             <h2>Previous Trees</h2>
             <p>Previously entered trees will appear here!</p>
             {trees.map(tree => (
