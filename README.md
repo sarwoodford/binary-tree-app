@@ -55,7 +55,36 @@ npm start
 ```
 *The React Applicaion Should Now be Running on Port 3000*
 
-# Getting Started with Create React App
+## Example Input and Output: 
+
+***input: 5, 3, 7, 2, 4, 6, 8***
+
+***Output (simplified):***
+```json
+{
+  "value": 5,
+  "left": {
+    "value": 3,
+    "left": { "value": 2, "left": null, "right": null },
+    "right": { "value": 4, "left": null, "right": null }
+  },
+  "right": {
+    "value": 7,
+    "left": { "value": 6, "left": null, "right": null },
+    "right": { "value": 8, "left": null, "right": null }
+  }
+}
+```
+
+## Author 
+
+***Sara Woodford***
+Software Development Student 
+
+[LinkedIn](https://www.linkedin.com/in/sara-woodford-96039b2a8/) | [GitHub](https://github.com/sarwoodford)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
