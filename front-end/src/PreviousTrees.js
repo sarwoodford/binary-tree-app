@@ -12,6 +12,7 @@ const PreviousTrees = () => {
         <div className="container">
             <h2>Previous Trees</h2>
             <p>Previously entered trees will appear here!</p>
+            <p><em>scroll to see entire tree</em></p>
             {trees.map(tree => (
                 <div key={tree.id}>
                     <p><strong>Input:</strong> {tree.numbers}</p>
