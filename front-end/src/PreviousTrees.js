@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const PreviousTrees = () => {
     const [trees, setTrees] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('/previous-trees').then(res => setTrees(res.data));
@@ -19,6 +21,7 @@ const PreviousTrees = () => {
                     <pre>{tree.treeJson}</pre>
                 </div>
             ))}
+            <button onClick={() => navigate('/')}>Back</button>
         </div>
     );
 };
